@@ -275,6 +275,7 @@ header{
   }
   main{
     .markets__section{
+
       .markets{
         box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
         border-radius:$br ;
@@ -302,7 +303,7 @@ header{
 
           table{
             border-collapse:collapse;
-            width: 1072px;
+            width:100%;
 
             tbody{
               tr{
@@ -357,6 +358,10 @@ header{
                 }
               }
             }
+
+            @media screen and (max-width:$mobileL) {
+              width: 800px;
+            }
           }
         }
 
@@ -372,7 +377,7 @@ header{
             text-decoration: none;
           }
         }
-        @media screen and (max-width: $mobileXS) {
+        @media screen and (max-width: 460px) {
           .markets__nav{
             flex-wrap: wrap;
             margin-bottom: 16px;
@@ -383,9 +388,8 @@ header{
               width: 100%;
               text-align: center;
             }
-          }         
-        }
-        @media screen and (max-width: 410px) {
+          }  
+          
           .markets__view__all{
             flex-wrap: wrap;
 
@@ -395,9 +399,133 @@ header{
             }
           }
         }
+      }  
+      
+      .why__btc__markets{
+        margin-top: 64px;
+  
+        h2{
+          text-align: center;
+          font-size:min(48, max(25px + 2vw));
+          font-weight:400;
+          margin: 0;
+        }
+  
+        .wbm__items{
+          display: flex;
+          justify-content: center;
+          gap: 64px;
+          margin-top: 128px;
+  
+          .wbm__item{
+            text-align: center;
+            max-width:250px;
+  
+            .wbm__icon{
+              margin-bottom: 32px;
+            }
+  
+            h4{
+              margin: 0;
+              color: $firstBlack;
+              font-weight: 400;
+              font-size: 20px;   
+            }
+  
+            p{
+              color: $secondBlack;
+              line-height: 24px;
+            }
+          }
+  
+        @media screen and (max-width: $mobileL){
+          flex-wrap: wrap;
+          margin-top: 64px;        
+        }
+        }
+      }
+    }
+    
+    .trade__section{
+
+      h4{
+        color:$firstBlack;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      .trade__section__blocks{
+        display: flex;
+        justify-content: space-between;
+        gap:32px;
+
+        .trade__section__left{
+          flex:1 1 550px;
+          h2{
+            color:$firstBlack;
+            font-size: min(40px, max(20px + 2vw));
+            font-weight: 400;
+          }
+
+          .trade__items{
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 64px;
+            gap: 32px;
+            .trade__item{
+              flex: 1 1 calc(100%/3);
+
+              h6{
+                font-size: 16px;
+                color: $firstBlack;
+                font-weight: 400;
+                margin: 8px 0px 16px 0px;
+              }
+
+              p{
+                color: $firstBlack ;
+                font-size: 15px;
+                line-height: 24px;
+              }
+            }
+          }
+        }
+
+        .trade__section__right{
+          flex:1 1 550px;
+
+        }
+
+        @media screen and (max-width:$tablet){
+          flex-wrap: wrap;
+          .trade__section__right{
+
+            .trade__section__right__img{
+              img{
+                width: 100%;
+              }
+            }
+          }
+        }
+        
+        @media screen and (max-width:$mobileM){
+          .trade__section__left{
+            h2{
+              text-align: center;
+            }
+
+            .trade__items{
+              .trade__item{
+                flex: 1 1 100%;
+                text-align: center;
+              }
+            }
+          }
+
       }
     }
   }
+}
  
    
 
