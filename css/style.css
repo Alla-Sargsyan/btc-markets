@@ -342,6 +342,9 @@ main .markets__section .why__btc__markets .wbm__items .wbm__item p {
     margin-top: 64px;
   }
 }
+main .trade__section {
+  margin-top: 200px;
+}
 main .trade__section h4 {
   color: #18181B;
   font-weight: 400;
@@ -396,6 +399,69 @@ main .trade__section .trade__section__blocks .trade__section__right {
     text-align: center;
   }
   main .trade__section .trade__section__blocks .trade__section__left .trade__items .trade__item {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+}
+main .wallet__section {
+  margin-top: 220px;
+}
+main .wallet__section h4 {
+  margin-left: 552px;
+  color: #18181B;
+  font-weight: 400;
+  font-size: 16px;
+}
+main .wallet__section .wallet__section__blocks {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+}
+main .wallet__section .wallet__section__blocks .wallet__section__left {
+  flex: 1 1 550px;
+}
+main .wallet__section .wallet__section__blocks .wallet__section__right {
+  flex: 1 1 550px;
+}
+main .wallet__section .wallet__section__blocks .wallet__section__right h3 {
+  color: #18181B;
+  font-size: min(40px, max(20px + 2vw));
+  font-weight: 400;
+  margin-top: 16px;
+}
+main .wallet__section .wallet__section__blocks .wallet__section__right .wallet__items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 64px;
+  gap: 32px;
+}
+main .wallet__section .wallet__section__blocks .wallet__section__right .wallet__items .wallet__item {
+  flex: 1 1 33.3333333333%;
+}
+main .wallet__section .wallet__section__blocks .wallet__section__right .wallet__items .wallet__item h6 {
+  font-size: 16px;
+  color: #18181B;
+  font-weight: 400;
+  margin: 8px 0px 16px 0px;
+}
+main .wallet__section .wallet__section__blocks .wallet__section__right .wallet__items .wallet__item p {
+  color: #27272A;
+  font-size: 15px;
+  line-height: 24px;
+}
+@media screen and (max-width: 1024px) {
+  main .wallet__section .wallet__section__blocks {
+    flex-wrap: wrap;
+  }
+  main .wallet__section .wallet__section__blocks .wallet__section__left .wallet__section__left__img img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .wallet__section .wallet__section__blocks .wallet__section__right h3 {
+    text-align: center;
+  }
+  main .wallet__section .wallet__section__blocks .wallet__section__right .wallet__items .wallet__item {
     flex: 1 1 100%;
     text-align: center;
   }

@@ -447,7 +447,7 @@ header{
     }
     
     .trade__section{
-
+      margin-top: 200px;
       h4{
         color:$firstBlack;
         font-weight: 400;
@@ -523,6 +523,90 @@ header{
           }
 
       }
+    }
+  }
+
+  .wallet__section{
+    margin-top: 220px;
+
+    h4{
+      margin-left: 552px;
+      color:$firstBlack;
+      font-weight: 400;
+      font-size: 16px;
+    }
+    .wallet__section__blocks{
+      display: flex;
+      justify-content: space-between;
+      gap:32px;
+
+
+      .wallet__section__left{
+        flex:1 1 550px;
+      }
+
+      .wallet__section__right{
+        flex:1 1 550px;
+
+        h3{
+          color:$firstBlack;
+          font-size: min(40px, max(20px + 2vw));
+          font-weight: 400;
+          margin-top: 16px;
+        }
+
+        .wallet__items{
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 64px;
+          gap: 32px;
+
+          .wallet__item{
+            flex: 1 1 calc(100%/3);
+
+            h6{
+              font-size: 16px;
+              color: $firstBlack;
+              font-weight: 400;
+              margin: 8px 0px 16px 0px;
+            }
+
+            p{
+              color: $secondBlack;
+              font-size: 15px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      @media screen and (max-width:$tablet){
+        flex-wrap: wrap;
+        .wallet__section__left{
+
+          .wallet__section__left__img{
+            img{
+              width: 100%;
+            }
+          }
+        }
+      }
+      
+      @media screen and (max-width:$mobileM){
+        .wallet__section__right{
+          h3{
+            text-align: center;
+          }
+
+          .wallet__items{
+            .wallet__item{
+              flex: 1 1 100%;
+              text-align: center;
+            }
+          }
+        }
+
+    }
     }
   }
 }
