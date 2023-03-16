@@ -237,11 +237,16 @@ header{
         }
       }
 
+      @media screen and (max-width:800px) {
+        gap: 32px;
+      }
+
       @media screen and (max-width: $mobileL){
         flex-wrap: wrap;
         justify-content: center;
         text-align: center;
         padding-top: 65px;
+        gap: 64px;
 
         .header__left{
           .header__left__btns, .header__left__stars{
@@ -275,7 +280,7 @@ header{
   }
   main{
     .markets__section{
-
+      margin-bottom: 128px;
       .markets{
         box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
         border-radius:$br ;
@@ -447,7 +452,7 @@ header{
     }
     
     .trade__section{
-      margin-top: 200px;
+      margin-bottom: 128px;
       h4{
         color:$firstBlack;
         font-weight: 400;
@@ -507,6 +512,8 @@ header{
             }
           }
         }
+
+
         
         @media screen and (max-width:$mobileM){
           .trade__section__left{
@@ -522,6 +529,19 @@ header{
             }
           }
 
+      }
+    }
+  }
+
+  @media screen and (max-width: $mobileL)   {
+    .markets__section, .trade__section{
+      margin-bottom: 64px;
+    }
+    .markets__section{
+      .why__btc__markets{
+        .wbm__items{
+          gap: 32px;
+        }
       }
     }
   }
