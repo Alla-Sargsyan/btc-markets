@@ -776,6 +776,75 @@ main{
 
       }
     }
+    hr{
+      margin-top: 100px;
+      background: #D4D4D8;
+    }
+
+    .crypto__news__section{
+      display: flex;
+      justify-content: center;
+      flex-flow: column;
+      align-items:center;
+      gap: 64px;
+
+      h2{
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 40px;
+      }
+
+      .week__crypto__news__items{
+        display: flex;
+        justify-content: center;
+        align-content:space-between;     
+        gap: 32px;
+
+        .week__crypto__news__item{
+
+          .newsletter{
+            display: flex;
+            justify-content: left;
+            align-items:center;
+            gap: 24px;
+            background:$primary;
+            width: 64px;
+             a{
+              border:1px solid $primary;
+              display: block;
+              text-decoration: none;
+             }
+            
+          }
+          a{
+            display: block;
+            text-decoration: none;
+            color:$firstBlack;
+          }
+        }
+      }
+      a{
+        text-decoration: none;
+        color:$firstBlack;
+        font-size: 15px;
+        line-height: 20px;
+        font-weight: 400;
+      }
+      .social__sites{
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        gap:32px;
+
+        a{
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 20px;
+          text-decoration: none;
+          color: $firstBlack;
+        }
+      }
+    }
 
 
     @media screen and (max-width: $mobileL){
