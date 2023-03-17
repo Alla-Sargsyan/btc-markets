@@ -508,6 +508,74 @@ main .vip__program__section .container .vip__program__section__cover img {
   display: block;
   width: 100%;
 }
+main .start__trading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 122px;
+}
+main .start__trading h2 {
+  font-weight: 400;
+  font-size: min(40px, max(20px + 2vw));
+  letter-spacing: 1px;
+  margin: 0px 0px 86px 0;
+}
+main .start__trading .start__trading__items {
+  display: flex;
+  justify-content: center;
+  gap: 64px;
+}
+main .start__trading .start__trading__items .start__trading__item {
+  text-align: center;
+  max-width: 260px;
+}
+main .start__trading .start__trading__items .start__trading__item .icon {
+  margin-bottom: 32px;
+}
+main .start__trading .start__trading__items .start__trading__item h6 {
+  margin: 0;
+  color: #18181B;
+  font-weight: 400;
+  font-size: 18px;
+}
+main .start__trading .start__trading__items .start__trading__item p {
+  color: #27272A;
+  line-height: 24px;
+}
+@media screen and (max-width: 768px) {
+  main .start__trading .start__trading__items {
+    flex-wrap: wrap;
+    margin-top: 64px;
+    gap: 32px;
+  }
+}
+@media screen and (max-width: 380px) {
+  main .start__trading .start__trading__items {
+    gap: 16px;
+  }
+}
+main .start__trading .start__trading__footer {
+  margin-top: 46px;
+}
+main .start__trading .start__trading__footer .get__started {
+  width: 156px;
+}
+main .start__trading .start__trading__footer .get__started a {
+  display: block;
+  padding: 9px 33px;
+  border-radius: 4px;
+  text-decoration: none;
+  background: #4CFDC7;
+  color: #01271C;
+}
+main .start__trading .start__trading__footer .start__trading__stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #27272A;
+  margin-top: 32px;
+}
 @media screen and (max-width: 768px) {
   main .markets__section, main .template__section {
     margin-bottom: 64px;
