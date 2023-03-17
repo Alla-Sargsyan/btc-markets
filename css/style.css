@@ -576,6 +576,47 @@ main .start__trading .start__trading__footer .start__trading__stars {
   color: #27272A;
   margin-top: 32px;
 }
+main .trade__app__section h2 {
+  font-size: min(40px, max(20px + 2vw));
+  line-height: 48px;
+  letter-spacing: 1px;
+  font-weight: 400;
+  color: #000000;
+}
+main .trade__app__section p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #27272A;
+}
+main .trade__app__section .app {
+  padding-top: 30px;
+  display: flex;
+  gap: 36px;
+}
+main .trade__app__section .app .app__stars {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #27272A;
+  margin-top: 32px;
+}
+@media screen and (max-width: 380px) {
+  main .trade__app__section .app {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+}
+main .trade__app__section a {
+  padding-top: 32px;
+  display: block;
+  text-decoration: none;
+  color: #18181B;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}
 @media screen and (max-width: 768px) {
   main .markets__section, main .template__section {
     margin-bottom: 64px;
