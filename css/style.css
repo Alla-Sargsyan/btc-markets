@@ -128,8 +128,13 @@ header .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 130px;
+  padding-top: 128px;
   gap: 64px;
+}
+@media screen and (max-width: 1024px) {
+  header .header {
+    padding-top: 64px;
+  }
 }
 header .header .header__left {
   max-width: 659px;
@@ -174,6 +179,9 @@ header .header .header__left .header__left__stars {
   align-items: center;
   gap: 8px;
   color: #27272A;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media screen and (max-width: 800px) {
   header .header {
@@ -318,7 +326,7 @@ main .markets__section .why__btc__markets {
 }
 main .markets__section .why__btc__markets h2 {
   text-align: center;
-  font-size: min(48, max(25px + 2vw));
+  font-size: min(40, max(20px + 2vw));
   font-weight: 400;
   margin: 0;
 }
@@ -418,7 +426,7 @@ main .template__section .template__section__cover img {
     flex-wrap: wrap;
   }
   main .template__section .template__section__cover img {
-    width: 630px;
+    width: 100%;
     margin: 0 auto;
   }
 }
@@ -434,6 +442,11 @@ main .template__section .template__section__cover img {
 main .vip__program__section {
   background: #fafafa;
   padding-top: 128px;
+}
+@media screen and (max-width: 768px) {
+  main .vip__program__section {
+    padding-top: 64px;
+  }
 }
 main .vip__program__section .container .vip__program__section__content {
   max-width: 710px;
@@ -508,187 +521,278 @@ main .vip__program__section .container .vip__program__section__cover img {
   display: block;
   width: 100%;
 }
-main .start__trading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding-top: 122px;
+main .tree__easy__steps__section {
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
-main .start__trading h2 {
+@media screen and (max-width: 768px) {
+  main .tree__easy__steps__section {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+}
+main .tree__easy__steps__section .tree__easy__steps {
+  max-width: 900px;
+  margin: 0 auto;
+}
+main .tree__easy__steps__section .tree__easy__steps h2 {
   font-weight: 400;
   font-size: min(40px, max(20px + 2vw));
-  letter-spacing: 1px;
-  margin: 0px 0px 86px 0;
+  letter-spacing: 0.1px;
+  margin: 16px 0px 64px 0;
+  text-align: center;
 }
-main .start__trading .start__trading__items {
+main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items {
   display: flex;
   justify-content: center;
   gap: 64px;
+  margin-bottom: 64px;
 }
-main .start__trading .start__trading__items .start__trading__item {
+main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items .tree__easy__steps__item {
   text-align: center;
-  max-width: 260px;
+  max-width: 278px;
 }
-main .start__trading .start__trading__items .start__trading__item .icon {
-  margin-bottom: 32px;
+main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items .tree__easy__steps__item .icon {
+  padding: 16px;
+  background: #FCFBF8;
+  width: 72px;
+  height: 72px;
+  border-radius: 4px;
+  margin: 0 auto;
 }
-main .start__trading .start__trading__items .start__trading__item h6 {
-  margin: 0;
+main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items .tree__easy__steps__item h6 {
+  margin: 16px 0px;
   color: #18181B;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 20px;
 }
-main .start__trading .start__trading__items .start__trading__item p {
+main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items .tree__easy__steps__item p {
   color: #27272A;
   line-height: 24px;
+  font-size: 15px;
+  letter-spacing: 0.2px;
 }
 @media screen and (max-width: 768px) {
-  main .start__trading .start__trading__items {
+  main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items {
     flex-wrap: wrap;
-    margin-top: 64px;
+  }
+}
+@media screen and (max-width: 580px) {
+  main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__items {
     gap: 32px;
   }
 }
-@media screen and (max-width: 380px) {
-  main .start__trading .start__trading__items {
-    gap: 16px;
-  }
-}
-main .start__trading .start__trading__footer {
-  margin-top: 46px;
-}
-main .start__trading .start__trading__footer .get__started {
-  width: 156px;
-}
-main .start__trading .start__trading__footer .get__started a {
+main .tree__easy__steps__section .tree__easy__steps a {
   display: block;
   padding: 9px 33px;
   border-radius: 4px;
   text-decoration: none;
   background: #4CFDC7;
   color: #01271C;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto 32px auto;
 }
-main .start__trading .start__trading__footer .start__trading__stars {
+main .tree__easy__steps__section .tree__easy__steps .tree__easy__steps__stars {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   color: #27272A;
-  margin-top: 32px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
-main .trade__app__section h2 {
+main .trade__on__the__go h2 {
   font-size: min(40px, max(20px + 2vw));
   line-height: 48px;
-  letter-spacing: 1px;
+  letter-spacing: 0.1px;
   font-weight: 400;
+  margin: 0px 0px 32px 0px;
   color: #000000;
+  text-align: center;
 }
-main .trade__app__section p {
-  font-size: 16px;
+main .trade__on__the__go p {
+  font-size: 15px;
   font-weight: 400;
   line-height: 24px;
+  letter-spacing: 0.2px;
   color: #27272A;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 32px auto;
 }
-main .trade__app__section .app {
-  padding-top: 30px;
+main .trade__on__the__go .totg__store {
   display: flex;
-  gap: 36px;
+  justify-content: center;
+  gap: 32px;
 }
-main .trade__app__section .app .app__stars {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  color: #27272A;
-  margin-top: 32px;
-}
-@media screen and (max-width: 380px) {
-  main .trade__app__section .app {
+@media screen and (max-width: 580px) {
+  main .trade__on__the__go .totg__store {
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
   }
 }
-main .trade__app__section a {
-  padding-top: 32px;
+main .trade__on__the__go .totg__store .app__store img, main .trade__on__the__go .totg__store .google__play img {
+  display: block;
+  width: 150px;
+  height: 40px;
+}
+main .trade__on__the__go .totg__store .app__store .app__store__stars, main .trade__on__the__go .totg__store .app__store .google__play__stars, main .trade__on__the__go .totg__store .google__play .app__store__stars, main .trade__on__the__go .totg__store .google__play .google__play__stars {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+main .trade__on__the__go .totg__store .app__store .app__store__stars img, main .trade__on__the__go .totg__store .app__store .google__play__stars img, main .trade__on__the__go .totg__store .google__play .app__store__stars img, main .trade__on__the__go .totg__store .google__play .google__play__stars img {
+  width: unset;
+  height: unset;
+}
+main .trade__on__the__go a {
+  padding: 9px 36px;
   display: block;
   text-decoration: none;
   color: #18181B;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
+  border: 1px solid #18181B;
+  border-radius: 4px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 32px auto 0px auto;
 }
-main hr {
-  margin-top: 100px;
-  background: #D4D4D8;
-}
-main .crypto__news__section {
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
-  gap: 64px;
-}
-main .crypto__news__section h2 {
-  font-weight: 400;
-  font-size: 31px;
-  line-height: 40px;
-}
-main .crypto__news__section .week__crypto__news__items {
-  display: flex;
-  justify-content: center;
-  align-content: space-between;
-  gap: 32px;
-}
-main .crypto__news__section .week__crypto__news__items .week__crypto__news__item .newsletter {
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  gap: 24px;
-  background: #4CFDC7;
-  width: 64px;
-}
-main .crypto__news__section .week__crypto__news__items .week__crypto__news__item .newsletter a {
-  border: 1px solid #4CFDC7;
-  display: block;
-  text-decoration: none;
-}
-main .crypto__news__section .week__crypto__news__items .week__crypto__news__item a {
-  display: block;
-  text-decoration: none;
-  color: #18181B;
-}
-main .crypto__news__section a {
-  text-decoration: none;
-  color: #18181B;
-  font-size: 15px;
-  line-height: 20px;
-  font-weight: 400;
-}
-main .crypto__news__section .social__sites {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
-main .crypto__news__section .social__sites a {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  text-decoration: none;
-  color: #18181B;
+main .latest__news__section {
+  padding-top: 128px;
+  padding-bottom: 128px;
 }
 @media screen and (max-width: 768px) {
-  main .markets__section, main .template__section {
-    margin-bottom: 64px;
+  main .latest__news__section {
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
-  main .template__section__content h4 {
+}
+main .latest__news__section h2 {
+  font-size: min(40px, max(20px + 2vw));
+  line-height: 48px;
+  letter-spacing: 0.1px;
+  font-weight: 400;
+  margin: 0px 0px 32px 0px;
+  color: #000000;
+  text-align: center;
+}
+main .latest__news__section .latest__news__items {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+main .latest__news__section .latest__news__items .latest__news__item {
+  box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
+  border-radius: 8px;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__cover {
+  max-width: 357px;
+  max-height: 148px;
+  overflow: hidden;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16px 0px;
+  padding: 0px 16px;
+}
+@media screen and (max-width: 380px) {
+  main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status {
+    flex-wrap: wrap;
+  }
+  main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p {
+    width: 100%;
     text-align: center;
   }
-  main .markets__section .why__btc__markets .wbm__items {
+  main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p:first-child {
+    margin-bottom: 8px;
+  }
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p {
+  margin: 0px;
+  color: #3F3F46;
+}
+main .latest__news__section .latest__news__items .latest__news__item .latest__news__item__date__status p:first-child {
+  background: #BDFFEB;
+  padding: 6px;
+  border-radius: 4px;
+  color: #01271C;
+  font-size: 15px;
+}
+main .latest__news__section .latest__news__items .latest__news__item h4 {
+  font-size: min(24px, max(12px + 2vw));
+  margin: 0;
+  font-weight: 400;
+  max-width: 350px;
+  padding: 0px 16px;
+}
+main .latest__news__section .latest__news__items .latest__news__item h4 a {
+  color: #18181B;
+  text-decoration: none;
+}
+main .latest__news__section .latest__news__items .latest__news__item .read__more {
+  display: block;
+  margin-top: 16px;
+  text-decoration: none;
+  color: #18181B;
+  padding: 0px 16px 16px 16px;
+}
+@media screen and (max-width: 1024px) {
+  main .latest__news__section .latest__news__items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+main .latest__news__section .chek__out__link {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: #18181B;
+  margin-bottom: 64px;
+}
+main .latest__news__section .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+@media screen and (max-width: 768px) {
+  main .latest__news__section .social {
+    flex-wrap: wrap;
+  }
+}
+main .latest__news__section .social a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #18181B;
+}
+
+@media screen and (max-width: 768px) {
+  .markets__section {
+    margin-bottom: 64px;
+  }
+  .template__section {
+    margin-bottom: 64px;
+  }
+  .template__section .template__section__content h4 {
+    text-align: center;
+  }
+  .markets__section .why__btc__markets .wbm__items {
     gap: 32px;
   }
 }
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */

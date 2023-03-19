@@ -178,8 +178,12 @@ header{
           display: flex;
           justify-content: space-between;
           align-items: center;
-          padding-top: 130px;
+          padding-top: 128px;
           gap: 64px;
+
+          @media screen and (max-width:$tablet){
+            padding-top:64px;
+          }
 
       .header__left{
         max-width: 659px;
@@ -233,6 +237,7 @@ header{
           align-items: center;
           gap: 8px;
           color:$secondBlack;
+          user-select: none;
 
         }
       }
@@ -411,7 +416,7 @@ main{
   
         h2{
           text-align: center;
-          font-size:min(48, max(25px + 2vw));
+          font-size:min(40, max(20px + 2vw));
           font-weight:400;
           margin: 0;
         }
@@ -532,7 +537,8 @@ main{
 
          .template__section__cover{
           img{
-            width: 630px;
+            // width: 630px;
+            width: 100%;
             margin: 0 auto;
           }
          
@@ -558,6 +564,10 @@ main{
     .vip__program__section{
       background: #fafafa;
       padding-top: 128px;
+
+      @media screen and (max-width:$mobileL){
+        padding-top: 64px;
+      }
 
       .container{
 
@@ -647,216 +657,308 @@ main{
       }
     }
 
-    .start__trading{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      padding-top: 122px;
+    .tree__easy__steps__section{
+      padding-top: 128px;
+      padding-bottom: 128px;
 
-      h2{
-        font-weight: 400;
-        font-size: min(40px, max(20px + 2vw));
-        letter-spacing: 1px;
-        margin: 0px 0px 86px 0;
-
+      @media screen and (max-width:$mobileL){
+        padding-top: 64px;
+        padding-bottom: 64px;
       }
+      .tree__easy__steps{
+        max-width:900px;
+        margin: 0 auto;
 
-      .start__trading__items{
-        display: flex;
-        justify-content: center;
-        gap: 64px;
-
-        .start__trading__item{
+        h2{
+          font-weight: 400;
+          font-size: min(40px, max(20px + 2vw));
+          letter-spacing: 0.1px;
+          margin: 16px 0px 64px 0;
           text-align: center;
-            max-width:260px;
   
+        }
+
+        .tree__easy__steps__items{
+          display: flex;
+          justify-content: center;
+          gap: 64px;
+          margin-bottom: 64px;
+
+          .tree__easy__steps__item{
+            text-align: center;
+            max-width:278px;
+
             .icon{
-              margin-bottom: 32px;
+              padding: 16px;
+              background: #FCFBF8;
+              width: 72px;
+              height: 72px;
+              border-radius:$br;
+              margin: 0 auto;             
             }
   
             h6{
-              margin: 0;
+              margin:16px 0px;
               color: $firstBlack;
               font-weight: 400;
-              font-size: 18px;   
+              font-size: 20px;   
             }
   
             p{
               color: $secondBlack;
               line-height: 24px;
+              font-size: 15px;
+              letter-spacing: 0.2px;
             }
+          }
 
-        }
+         
 
-        @media screen and (max-width: $mobileL){
-          flex-wrap: wrap;
-          margin-top: 64px;
-          gap: 32px;       
-        }
-
-        @media screen and (max-width: $mobileXS){
-          gap: 16px;       
-        }
-
-      }
-
-      .start__trading__footer{
-        margin-top: 46px;
-
-        .get__started{
-          width: 156px;
-          a{
-            display: block;
-            padding: 9px 33px;
-            border-radius:$br;
-            text-decoration: none;
-            background: $primary;
-            color:$greenBlack;
+          @media screen and (max-width: $mobileL){
+            flex-wrap: wrap;
+          }
+  
+          @media screen and (max-width: $mobileM){
+            gap: 32px;       
           }
         }
 
-        .start__trading__stars{
+        a{
+          display: block;
+          padding: 9px 33px;
+          border-radius:$br;
+          text-decoration: none;
+          background: $primary;
+          color:$greenBlack;
+          width: fit-content;
+          margin: 0 auto 32px auto;
+        }
+        .tree__easy__steps__stars{
           display: flex;
+          justify-content: center;
           align-items: center;
           gap: 8px;
           color:$secondBlack;
-          margin-top: 32px;
+          user-select: none;
+          
         }
       }
-
- 
-
-
     }
 
-    .trade__app__section{
+    .trade__on__the__go{
+
       h2{
         font-size: min(40px, max(20px + 2vw));
         line-height: 48px;
-        letter-spacing: 1px;
+        letter-spacing: 0.1px;
         font-weight: 400;
-        color:$nativBlack
+        margin: 0px 0px 32px 0px;
+        color:$nativBlack;
+        text-align: center;
       }
       p{
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
         line-height: 24px;
-        color:$secondBlack
+        letter-spacing: 0.2px;
+        color:$secondBlack;
+        text-align: center;
+        max-width: 900px;
+        margin: 0 auto 32px auto;
 
       }
 
-      .app{
-        padding-top: 30px ;
-        display: flex;
-        gap: 36px;
-
-        .app__stars{
-          display: flex;
-          align-items: center;
-          gap: 8px;
-          color:$secondBlack;
-          margin-top: 32px;
-        }
-        @media screen and (max-width: $mobileXS){
-          flex-wrap: wrap;
-          justify-content: center;
-          align-items:center;
-        }
- 
-      }
-      a{
-        padding-top: 32px ;
-        display: block;
-        text-decoration: none;
-        color:$firstBlack;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 20px;
-
-      }
-    }
-    hr{
-      margin-top: 100px;
-      background: #D4D4D8;
-    }
-
-    .crypto__news__section{
-      display: flex;
-      justify-content: center;
-      flex-flow: column;
-      align-items:center;
-      gap: 64px;
-
-      h2{
-        font-weight: 400;
-        font-size: 31px;
-        line-height: 40px;
-      }
-
-      .week__crypto__news__items{
+      .totg__store{
         display: flex;
         justify-content: center;
-        align-content:space-between;     
         gap: 32px;
 
-        .week__crypto__news__item{
+        @media screen and (max-width: $mobileM){
+          flex-wrap: wrap;
+        }
 
-          .newsletter{
-            display: flex;
-            justify-content: left;
-            align-items:center;
-            gap: 24px;
-            background:$primary;
-            width: 64px;
-             a{
-              border:1px solid $primary;
-              display: block;
-              text-decoration: none;
-             }
-            
-          }
-          a{
+        .app__store, .google__play{
+          img{
             display: block;
-            text-decoration: none;
-            color:$firstBlack;
+            width: 150px;
+            height: 40px;
+          }
+
+          .app__store__stars, .google__play__stars{
+            display: flex;
+            gap: 8px;
+            margin-top:16px;
+
+            img{
+              width: unset;
+              height: unset;
+            }
           }
         }
-      }
-      a{
-        text-decoration: none;
-        color:$firstBlack;
-        font-size: 15px;
-        line-height: 20px;
-        font-weight: 400;
-      }
-      .social__sites{
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        gap:32px;
+          
+        }
 
         a{
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 20px;
+          padding: 9px 36px;
+          display: block;
           text-decoration: none;
-          color: $firstBlack;
+          color:$firstBlack;
+          border: 1px solid $firstBlack;
+          border-radius: $br;
+          width: fit-content;
+          margin: 32px auto 0px auto;
+  
         }
       }
-    }
 
+      .latest__news__section{
+        padding-top: 128px;
+        padding-bottom: 128px;
+  
+        @media screen and (max-width:$mobileL){
+          padding-top: 64px;
+          padding-bottom: 64px;
+        }
+        h2{
+          font-size: min(40px, max(20px + 2vw));
+          line-height: 48px;
+          letter-spacing: 0.1px;
+          font-weight: 400;
+          margin: 0px 0px 32px 0px;
+          color:$nativBlack;
+          text-align: center;
+        }
+        .latest__news__items{
+          display: flex;
+          justify-content: space-between;
+          gap:32px ;
+          margin-bottom: 64px;
 
+          .latest__news__item{
+            box-shadow: 0px 0px 16px rgba(9, 24, 26, 0.04);
+            border-radius:8px;
+
+            .latest__news__item__cover{
+              max-width: 357px;
+              max-height: 148px;
+              overflow: hidden;
+
+              img{
+                display: block;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+              }
+            }
+
+            .latest__news__item__date__status{
+              display: flex;
+              justify-content:space-between;
+              align-items:center;
+              margin: 16px 0px;
+              padding: 0px 16px;
+
+              @media screen and (max-width: $mobileXS) {
+                flex-wrap: wrap;
+
+                p{
+                  width: 100%;
+                  text-align: center;
+
+                  &:first-child{
+                  margin-bottom: 8px;
+                }
+                }
+                
+              }
+
+              p{
+                margin: 0px;
+                color: $footerBlack;
+
+                &:first-child{
+                  background:#BDFFEB;
+                  padding: 6px;
+                  border-radius:$br;
+                  color:$greenBlack;
+                  font-size: 15px;
+
+                }
+              }
+            }
+
+            h4{
+              font-size: min(24px, max(12px + 2vw));
+              margin: 0;
+              font-weight: 400;
+              max-width: 350px;
+              padding: 0px 16px;
+
+              a{
+                color: $firstBlack;
+                text-decoration: none;
+              }
+            }
+
+            .read__more{
+              display: block;
+              margin-top:16px;
+              text-decoration: none;
+              color: $firstBlack;
+              padding: 0px 16px 16px 16px;
+            }
+          }
+          @media screen and (max-width:$tablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+        }
+        .chek__out__link{
+          display: block;
+          text-decoration: none;
+          text-align: center;
+          color: $firstBlack;
+          margin-bottom: 64px;
+        }
+
+        .social {      
+            display: flex;
+            justify-content: center;
+            align-items:center;
+            gap: 32px;
+
+            @media screen and (max-width:$mobileL){
+              flex-wrap: wrap;
+            }
+
+            a{
+              display: flex;
+              align-items:center;
+              gap: 10px;
+              text-decoration: none;
+              font-size: 16px;
+              color:$firstBlack;
+            }
+            
+          }
+        }
+      }
+    
     @media screen and (max-width: $mobileL){
-    .markets__section, .template__section{
+    .markets__section{
       margin-bottom: 64px;
     }
 
-    .template__section__content{
+    .template__section{
+      margin-bottom: 64px;
+         .template__section__content{
       h4{
         text-align: center;
       }
     }
+    }
+
+ 
 
     .markets__section{
       .why__btc__markets{
@@ -866,7 +968,7 @@ main{
       }
     }
     }
-  }
+  
 
  
    
